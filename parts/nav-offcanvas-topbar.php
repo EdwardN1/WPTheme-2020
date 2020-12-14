@@ -9,7 +9,22 @@
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
 		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
+            <div class="cell shrink">
+                <ul class="menu">
+                    <?php
+                    if (has_custom_logo()) { ?>
+                        <li>
+                            <?php the_custom_logo(); ?>
+                        </li>
+                        <?php
+                    } else {
+                        ?>
+                        <li><a href="<?php echo home_url(); ?>" class="logo"><?php bloginfo('name'); ?></a></li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+            </div>
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">
