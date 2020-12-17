@@ -1,4 +1,29 @@
 <?php
+
+/**
+ *
+ * ================== Foundation Block Category =======================
+ *
+ */
+
+add_filter( 'block_categories', function( $categories, $post ) {
+    return array_merge(
+        $categories,
+        array(
+            array(
+                'slug' => 'foundationblocks',
+                'title' => __( 'Foundation Blocks', 'foundationblocks' ),
+            ),
+        )
+    );
+}, 10, 2 );
+
+/**
+ *
+ * ======================= Orbit =======================
+ *
+ */
+
 add_action( 'acf/init', 'register_foundation_orbit_block' );
 function register_foundation_orbit_block() {
 
