@@ -140,6 +140,33 @@
                         "mime_types": ""
                     },
                     {
+                        "key": "field_5ff1869b63aad",
+                        "label": "Image Description",
+                        "name": "image_description",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5fdbda67dce92",
+                                    "operator": "==",
+                                    "value": "Image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
                         "key": "field_5fdce4f649bac",
                         "label": "Image Link",
                         "name": "image_link",
@@ -165,6 +192,33 @@
                         "allow_null": 0,
                         "allow_archives": 1,
                         "multiple": 0
+                    },
+                    {
+                        "key": "field_5ff186d663aae",
+                        "label": "Image Link Description",
+                        "name": "image_link_description",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5fdbda67dce92",
+                                    "operator": "==",
+                                    "value": "Image"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
                     },
                     {
                         "key": "field_5fdc8a3bbc6d1",
